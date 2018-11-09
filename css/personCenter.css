@@ -1,0 +1,589 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	height: 100%;
+	padding-top: 0.8rem;
+	/* padding-bottom: 1rem; */
+	background:#f2f6f7;
+	
+}
+/* 个人中心 */
+.topInfo{
+	width:6.4rem;
+	height:0.8rem;
+	background-color:#393a3f;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:10;/* 当前显示在最前面 */
+}
+.arrowLeft img{
+	width:0.2rem;
+	height:0.35rem;
+	margin-left:0.25rem;
+}
+.topInfo p{
+	color:white;
+	font-size:0.35rem;
+	margin-left:2rem;
+}
+
+/* 个人信息 */
+.personInfo{
+	width:6.4rem;
+	height:2.6rem;
+	position:relative;
+}
+.bg{
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+.personInfoList{
+	position:absolute;
+	top: 0.7rem;
+    left: 0.4rem;
+}
+.personImg{
+	width:1.2rem;
+	height:1.2rem;
+	vertical-align:top;
+}
+.personInfoItem{
+	display:inline-block;
+	margin-left: 0.17rem;
+}
+.personInfoDetail,.rankList{
+	display:inline-block;
+}
+.personName,.personType{
+	display:inline-block;
+}
+.personName{
+	font-size:0.25rem;
+	margin-right: 0.2rem;
+}
+.personType{
+	color:white;
+	border-radius: 0.5rem;
+    background: #ffa163;
+    padding: 0.06rem 0.22rem;
+    font-size:0.2rem;
+}
+.personType img{
+	width:0.25rem;
+	height:0.25rem;
+}
+.personNum,.personPosition{
+	color:white;
+	font-size:0.22rem;
+	margin-top:0.1rem;
+}
+.personPositionTitle,.positionList{
+	font-size:0.22rem;
+	color:white;
+}
+.personPositionTitle{
+	display:inline-block;
+	vertical-align:top;
+}
+.positionList{
+	display:inline-block;
+	width:3.6rem;
+}
+.rankList{
+	margin-left:0.6rem;
+	position:relative;
+}
+.rankNum{
+	position: absolute;
+    top: 0.48rem;
+    left: 0.36rem;
+    color:white;
+    font-size:0.19rem;
+}
+.rankList img{
+	width:1.25rem;
+	height:0.85rem;
+}
+/* 贡献值、BL币、成绩完成 */
+.personNumList{
+	display:none;
+	width:6.4rem;
+	height:1.1rem;
+	color:white;
+	background:#ffa163;
+}
+.contribute,.blList,.score{
+	display:inline-block;
+	width: 2rem;
+    text-align: center;
+    margin-top: 0.2rem;
+}
+.contribute,.blList{
+	border-right:0.01rem solid #eded;
+}
+.contributeNum,.blNum,.scoreNum{
+	font-size:0.3rem;
+	letter-spacing: 0.02rem;
+}
+.contributeTitle,.blTitle,.scoreTitle{
+	font-size:0.22rem;
+}
+/* 目标岗位、竞岗资格 */
+.objectDetail{
+	/* height:0.8rem; */
+	background:#fff;
+	border-bottom: 0.01rem solid #ededed;
+}
+.objectMajorPost{
+	margin-bottom:0.2rem;
+}
+.objectPosition{
+	display:inline-block;
+	width: 2rem;
+    /* border: 0.01rem solid; */
+    padding-left: 0.3rem;
+    box-sizing: border-box;
+    font-size: 0.27rem;
+    margin-top:0.25rem;
+    
+}
+.objectQualification{
+	display:inline-block;
+	width: 4.1rem;
+    /* border: 0.01rem solid; */
+    font-size: 0.27rem;
+    margin-top:0.25rem;
+    color:#637895;
+    text-align:right;
+    padding-right:0.2rem;
+}
+.arrowImg{
+	width:0.32rem;
+	height:0.32rem;
+}
+/* 目标岗位列表 */
+.objectPostList{
+	display:none;
+	margin:0 0.3rem;
+}
+.objectPostList ul li{
+	display:inline-block;
+	list-style:none;
+	text-align:center;
+	width: 1.77rem;
+    border: 0.01rem solid #93c0f3;
+    margin-left:0.05rem;
+    margin-right: 0.05rem;
+    padding:0.1rem 0;
+    font-size:0.2rem;
+    vertical-align:middle;
+    position:relative;
+}
+
+.objectPostList ul li img{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.objectPostName{
+	width:1.5rem;
+	/* border:0.01rem solid red; */
+}
+.selectImg{
+	height:0.2rem;
+}
+.addColor{
+	color:white;
+	background:#549cee;
+}
+/* 竞岗符合度 */
+.competePostRequire{
+	font-size:0.24rem;
+	margin-top:0.4rem;
+}
+.postValue{
+	padding-left:0.35rem;
+	margin-bottom:0.2rem;
+}
+.infoImg{
+	width:0.35rem;
+	height:0.35rem;
+}
+/* 个人成绩  */
+.personAchievement{
+	background:#fff;
+	margin-top:0.2rem;
+	font-size:0.27rem;
+}
+
+/* 个人成绩列表 */
+.personAchievementDetail{
+	margin-top: 0.7rem;
+}
+.personContribute,.contributeValue,.professionSkill
+,.skillValue,.taskPerformance,.taskValue,.developStudy,.developValue{
+	display:inline-block;
+}
+
+.personContribute,.professionSkill,.taskPerformance,.developStudy{
+	color:white;
+	margin-left:0.25rem;
+	padding: 0.06rem 0.3rem;
+	border-radius:0.1rem;
+	margin-bottom:0.25rem;
+}
+.contributeValue,.skillValue,.taskValue,.developValue{
+	width: 1.5rem;
+    /* border: 1px solid; */
+}
+/* 个人贡献 */
+.personContribute{
+	background:#62c8db;
+}
+.personContributeNum,.skillNum,.taskNum,.developNum{
+	font-size: 0.4rem;
+    letter-spacing: 0.02rem;
+}
+.achievementTitle{
+	font-size:0.2rem;
+}
+.personContribute img,.professionSkill img
+,.taskPerformance img,.developStudy img{
+	width: 0.6rem;
+    height: 0.6rem;
+   /*  margin-left:0.6rem; */
+    vertical-align: super;
+}
+/* 职业技能 */
+.professionSkill{
+	background:#5bc481;
+}
+/* 工作表现 */
+.taskPerformance{
+	background:#838ae6;
+}
+/* 个人发展学习 */
+.developStudy{
+	background:#5ea1fb;
+}
+/* 点击竞岗符合度弹出岗位胜任需求 */
+.competeQualificationDetail{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:6.4rem;
+	z-index:10000;
+}
+.competeBg{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background:#999999;
+	z-index:-10;
+	opacity:0.5;
+}
+.competeContent{
+	color:black;
+	background:#fff;
+	width: 4.8rem;
+    margin: 3rem auto 0 auto;
+    border-radius:0.1rem;
+}
+.competeTitle{
+	font-size:0.28rem;
+	text-align: center;
+    letter-spacing: 0.1rem;
+    padding:0.25rem 0 0.1rem 0;
+}
+.competeContentTable{
+	padding-bottom: 0.5rem;
+	font-size:0.23rem;
+}
+/* .competeContentTable table tr td{
+	width:1.58rem;
+	font-size: 0.23rem;
+    height: 0.6rem;
+}
+.t1{
+	border-top:0.01rem solid #c5d1de;
+	border-right:0.01rem solid #c5d1de;
+	border-bottom:0.01rem solid #c5d1de;
+}
+.t2{
+	border:0.01rem solid #c5d1de;
+}
+.t3{
+	border-top:0.01rem solid #c5d1de;
+	border-bottom:0.01rem solid #c5d1de;
+	border-left:0.01rem solid #c5d1de;
+} */
+
+.activeValue{
+	padding-top: 0.3rem;
+}
+.activeValue,.prestigeValue,
+.manaValue,.prestigeValue,.vocationalSkill{
+	padding-left:0.35rem;
+	margin-bottom:0.25rem;
+	/* display:none; */
+}
+
+.progress-out{
+	display:inline-block;
+}
+.percent-show{
+	font-size:0.2rem !important;
+}
+.fontColor{
+	color:#637895;
+}
+/* 点击个人贡献出现详情 */
+.personAchievementContentList{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:6.4rem;
+	z-index:10000;
+}
+.personAchievementBg{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background:#999999;
+	z-index:-10;
+	opacity:0.5;
+}
+.personAchievementContent{
+	color:black;
+	background:#fff;
+	width: 4.8rem;
+    margin: 3rem auto 0 auto;
+    border-radius:0.1rem;
+}
+
+
+.personAchievementDetailList{
+	width: 4.8rem;
+    height: 3.8rem;
+    /* border: 1px solid red; */
+    overflow: auto;
+    border-top: 0.01rem solid #ededed;
+}
+
+ul.menu {
+  padding: 0;
+  list-style: none;
+  width: 4.8rem;
+  /* margin: 20px auto; */
+  font-family: 'Century Gothic';
+  /* box-shadow: 0px 0px 25px #00000070; */
+  clear: both;
+  display: table;
+}
+ul.menu .list {
+  font-size: 14px;
+  border-bottom: 1px solid #ededed;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  height: 50px;
+  vertical-align: sub;
+  /* background: #3e5165; */
+  clear: both;
+}
+ul.menu .list:after {
+  content: "\f107";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  padding: 0px 5px;
+  color: black;
+  font-size:0.3rem;
+}
+ul.menu .list .items .list:after {
+  content: "\f107";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  padding: 0px 5px;
+  color: transparent;
+}
+
+ul.menu .list a {
+  text-decoration: none;
+  color: #637895;
+  padding: 0.2rem 0 0.2rem 0.3rem;
+  display: block;
+  height: 100%;
+  box-sizing: border-box;
+  width: 4rem;
+    /* border: 1px solid; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul.menu .list a:hover {
+  /* background-color: #324252; */
+  transition: 300ms all;
+  /* color: #09fbd2; */
+}
+ul.menu .list .items {
+  height: 0px;
+  overflow: hidden;
+}
+ul.menu .list .items a {
+  padding: 0.2rem 0 0.2rem 0.5rem;
+  color:black;
+}
+ul.menu .list .items a:hover {
+  /* background-color: #3f5d79; */
+  color: black;
+  transition: 300ms all;
+}
+ul.menu .list:last-child {
+ /*  border-bottom: none; */
+}
+
+ul.menu .active:after {
+  content: "\f106";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  padding: 0px 5px;
+  color: black;
+  font-size:0.3rem;
+}
+
+ul.menu .list .items .active:after {
+  content: "\f106";
+  font-family: FontAwesome;
+  position: absolute;
+  right: 17px;
+  top: 17px;
+  padding: 0px 5px;
+  color: transparent;
+}
+
+ul.menu .active > .items {
+  display: block;
+  /* background: #23313f; */
+  padding: 0px;
+  height: auto;
+  color: #fff;
+  /* transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+  /* transition: all 200ms; */
+  clear: both;
+  float: left;
+  width: 100%;
+  border-bottom: 1px solid #ededed;
+}
+ul.menu .active > .items li {
+  padding: 0px;
+  list-style: none;
+  border-bottom:none;
+}
+ul.menu .active > .items li:last-child {
+  border-color: transparent;
+  padding-bottom: 0px;
+}
+ul.menu .active > .items .active > .items {
+  /* background-color: #2f4b67; */
+}
+ul.menu .active > a {
+  /* color: #46efa4; */
+  /* text-transform: uppercase; */
+  font-weight: bold;
+}
+ul.menu .active .list {
+  /* background: #697d92; */
+}
+ul.menu .active .list a {
+  /* padding: 17px 0px 17px 45px; */
+}
+
+
+.seeIntroduce{
+	width:0.3rem;
+}
+.detailContent{
+	width:4.8rem !important;
+	background: #e3f2f6;
+    color: red !important;
+}
+.detailItem{
+	width:4.5rem !important;
+}
+
+/* 点击工作表现出现详情 */
+.taskPerformanceContent{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:6.4rem;
+	z-index:10000;
+}
+
+/* 点击个人发展学习出现详情 */
+.developStudyContent{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:6.4rem;
+	z-index:10000;
+}
+/* 点击职业技能出现职业技能详情 */
+.vocationalSkillContent{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:6.4rem;
+	z-index:10000;
+}
+.vocationalSkillDetail{
+	color:black;
+	background:#fff;
+	width: 4.8rem;
+    margin: 2rem auto 0 auto;
+    border-radius:0.1rem;
+}
+.vocationalSkillDetailList{
+	width: 4.8rem;
+    height: 5.5rem;
+    /* border: 1px solid red; */
+    overflow: auto;
+    /* border-top: 0.01rem solid #ededed; */
+}
+.dutyTask,.developTask{
+	width:2rem;
+	height:0.4rem;
+	margin:0.15rem 0 0 1.4rem;
+}
+ul.menu .noBorder{
+	border-bottom:none;
+}

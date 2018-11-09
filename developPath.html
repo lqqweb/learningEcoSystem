@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>发展路径</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/developPath.css">
+	<link rel="stylesheet" href="css/myProgress.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/jquery.myProgress.js"></script>
+	<script src="js/developPath.js"></script>
+</head>
+<body>
+	<div class="developPathContent">
+		<!-- 发展路径 -->
+		<div class="topInfo">
+			<a href="index.html" class="arrowLeft">
+				<img src="images/arrow-left.png" alt="">
+			</a>
+			<p>发展路径</p>
+		</div>
+		<p class="introduceTitle">
+			点击岗位可查看所需胜任需求,
+			<img src="images/personCenter/start.png" alt="" style="width: 0.3rem;height: 0.3rem">为首选岗位(必需在当前发展路线中选择),<img src="images/personCenter/select.png"  alt="">为已选中的目标岗位
+		</p>
+
+		<!-- 发展路径展示 -->
+		<div class="developPathList">
+			<!-- 技术线发展 -->
+			<div class="technicalLine">
+				<p class="technicalLineTitle"><b>当前发展路线</b><br><span class="selectCondition">(只能选择1个)</span></p>
+				<div class="technicalLineDevelop">
+					<!-- 现在岗位 -->
+					<div class="nowPost">
+						<div class="userImg"><img src="images/photo.jpg" alt=""></div>
+						<div class="nowPostPosition">助理助理助理工程师</div>
+					</div>
+					<!-- 可选择岗位 -->
+					<ul>
+						<li>
+							<img class="arrowDown" src="images/arrow-down.png" alt="">
+							<p class="postName">
+								<img class="firstSelect" src="images/personCenter/start.png" alt="">
+								<span>初级工程师</span>
+							</p>
+						</li>
+
+						<li>
+							<img class="arrowDown" src="images/arrow-down.png" alt="">
+							<p class="postName">
+								<span>中级工程师</span>
+							</p>
+						</li>
+
+						<li>
+							<img class="arrowDown" src="images/arrow-down.png" alt="">
+							<p class="postName">
+								<span>高级工程师</span>
+							</p>
+						</li>
+
+						<li>
+							<img class="arrowDown" src="images/arrow-down.png" alt="">
+							<p class="postName">
+								<span>特技工程师</span>
+							</p>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<!-- 转岗可选职位 -->
+			<div class="transformPost">
+				<p class="transformTitle"><b>目标竞升岗位</b><br><span class="selectCondition">(只能选择两个)</span></p>
+				<!-- 可选择岗位 -->
+				<ul class="transformPostDevelop">
+					<li>
+						<p class="transformName">
+							<img class="transSelect" src="images/personCenter/select.png" alt="">
+							<span class="linePost">技术讲师</span>
+							<br>
+							<span class="lineName">教育路线</span>
+						</p>
+					</li>
+
+					<li>
+						<p class="transformName">
+							<img class="transSelect" src="images/personCenter/select.png" alt="">
+							<span class="linePost">项目经理助理</span>
+							<br>
+							<span class="lineName">管理路线</span>
+						</p>
+					</li>
+
+					<li>
+						<p class="transformName">
+							<span class="linePost">中级工程师</span>
+							<br>
+							<span class="lineName">默认技术路线</span>
+						</p>
+					</li>
+
+					<li>
+						<p class="transformName">
+							<span class="linePost">小组负责人</span>
+							<br>
+							<span class="lineName">人事路线</span>
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+
+	<!-- 点击岗位查看对应岗位需求 -->
+	<div class="postCondition">
+		<div class="postConditionBg"></div>
+		<div class="postConditionContent">
+			<p class="postConditionTitle"><b>竞岗符合度</b><br><span style="font-size: 0.23rem;color:#549cee;"><b>(中级工程师)</b></span></p>
+			<div class="postConditionTable">
+				<div class="activeValue">
+					<span>个人等级</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div1">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="prestigeValue">
+					<span>&nbsp;&nbsp;&nbsp;贡献值</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div2">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="manaValue">
+					<span>&nbsp;&nbsp;&nbsp;声望值</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div3">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="prestigeValue">
+					<span>&nbsp;&nbsp;&nbsp;威望值</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div4">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="vocationalSkill">
+					<span>职业技能</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div5">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+
+				<div class="setObject">设为目标</div>
+				<div class="cancleObject">取消目标</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

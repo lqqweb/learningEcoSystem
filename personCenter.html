@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/personCenter.css">
+	<link rel="stylesheet" href="css/myProgress.css">
+	<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/jquery.myProgress.js"></script>
+	<script src="js/personCenter.js"></script>
+</head>
+<body>
+	<!-- 个人中心 -->
+<div class="personCenrerContent">
+	<div class="topInfo">
+		<a href="index.html" class="arrowLeft">
+			<img src="images/arrow-left.png" alt="">
+		</a>
+		<p>个人中心</p>
+	</div>
+	<!-- 个人信息 -->
+	<div class="personInfo">
+		<img class="bg" src="images/personCenter/bg.png" alt="">
+		<div class="personInfoList">
+			<img class="personImg" src="images/photo.jpg" alt="">
+			<div class="personInfoItem">
+				<div class="personInfoDetail">
+					<p class="personName">张三</p>
+					<p class="personType">
+						<img src="images/type.png" alt="">&nbsp;&nbsp;
+						<span>一级管理</span>
+					</p>
+					<p class="personNum">
+						工号&nbsp;:&nbsp;&nbsp;<span>JH0123456</span>
+					</p>
+				</div>
+				<div class="rankList">
+					<span class="rankNum">V12</span>
+					<img src="images/personCenter/rank.png" alt="">
+
+				</div>
+				<div class="personPosition">
+					<p class="personPositionTitle">职位&nbsp;:</p>&nbsp;&nbsp;<p class="positionList">华为事业部-光网络项目组-助理工程师</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 贡献值、BL币、成绩完成 -->
+	<!-- <div class="personNumList">
+		<div class="contribute">
+			<p class="contributeNum">13000</p>
+			<p class="contributeTitle">贡献值</p>
+		</div>
+		<div class="blList">
+			<p class="blNum">50</p>
+			<p class="blTitle">BL币</p>
+		</div>
+		<div class="score">
+			<p class="scoreNum">20/100</p>
+			<p class="scoreTitle">成绩完成</p>
+		</div>
+
+	</div> -->
+	<!-- 目标岗位、竞岗资格 -->
+	<div class="objectDetail">
+		<!-- 首选目标岗位 -->
+		<div class="objectMajorPost">
+			<div class="objectPosition">
+				<span><b>目标岗位</b></span>
+			</div>
+			<div class="objectQualification">
+				<span class="competeQualification">首选&nbsp;:&nbsp;&nbsp;</span><span>中级工程师</span>
+				<span><img class="arrowImg" src="images/personCenter/arrow-right.png" alt=""></span>
+			</div>
+		</div>
+		
+		<!-- 目标岗位列表 -->
+		<div class="objectPostList">
+			<ul>
+				<li class="firstList addColor">
+					<img class="startImg" src="images/personCenter/start.png" alt="">
+					<p class="objectPostName"><b>中级工程师</b><br><b>技术路线</b></p>
+					
+				</li>
+				<li class="secondList">
+					<img class="selectImg1" src="images/personCenter/select.png" alt="">
+					<p class="objectPostName"><b>技术讲师</b><br><b>教育路线</b></p>
+					<!-- <p class="objectPostName"><b>技术讲师</b></p>
+					<p class="objectPostLine"><b>教育路线</b></p> -->
+				</li>
+				<li class="threeList">
+					<img class="selectImg2" src="images/personCenter/select.png" alt="">
+					<p class="objectPostName"><b>项目经理助理</b><br><b>管理路线</b></p>
+					<!-- <p class="objectPostName"><b>项目经理助理</b></p>
+					<p class="objectPostLine"><b>管理路线</b></p> -->
+				</li>
+			</ul>
+		</div>
+		<!-- 竞岗符合度 -->
+		<div class="competePostRequire">
+			<div class="postValue">
+				<span>竞岗符合度</span>&nbsp;&nbsp;&nbsp;
+				<div class="progress-out" id="competePostNum">
+				    <div class="percent-show"><span>0</span>%</div>
+				    <div class="progress-in"></div>
+				</div>&nbsp;&nbsp;&nbsp;
+				<span><img class="infoImg" src="images/personCenter/info.png" alt=""></span>
+			</div>
+		</div>
+
+	</div>
+	<!-- 个人成绩 -->
+	<div class="personAchievement">
+		<!-- <div class="activeValue">
+			<span>活跃度</span>&nbsp;&nbsp;&nbsp;
+			<div class="progress-out" id="div1">
+			    <div class="percent-show"><span>0</span></div>
+			    <div class="progress-in"></div>
+			</div>&nbsp;&nbsp;&nbsp;
+			<span style="color:#637895;font-size: 0.25rem">活跃</span>
+		</div>
+		<div class="prestigeValue">
+			<span>声望值</span>&nbsp;&nbsp;&nbsp;
+			<div class="progress-out" id="div2">
+			    <div class="percent-show"><span>0</span></div>
+			    <div class="progress-in"></div>
+			</div>&nbsp;&nbsp;&nbsp;
+			<span style="color:#637895;font-size: 0.25rem">较低</span>
+		</div>
+		<div class="manaValue">
+			<span>威望度</span>&nbsp;&nbsp;&nbsp;
+			<div class="progress-out" id="div3">
+			    <div class="percent-show"><span>0</span></div>
+			    <div class="progress-in"></div>
+			</div>&nbsp;&nbsp;&nbsp;
+			<span style="color:#637895;font-size: 0.25rem">良好</span>
+		</div> -->
+		
+		<!-- 个人成绩列表 -->
+		<div class="personAchievementDetail">
+			<!-- 个人贡献 -->
+			<div class="personContribute">
+				<div class="contributeValue">
+					<p class="personContributeNum">270</p>
+					<p class="achievementTitle">个人贡献</p>
+				</div>
+				<img src="images/personCenter/contirbute.png" alt="">
+				
+			</div>
+
+			<!-- 职业技能 -->
+			<div class="professionSkill">
+				<div class="skillValue">
+					<p class="skillNum">60%</p>
+					<p class="achievementTitle">职业技能</p>
+				</div>
+				<img src="images/personCenter/skill.png" alt="">
+			</div>
+			<!-- 工作表现 -->
+			<div class="taskPerformance">
+				<div class="taskValue">
+					<p class="taskNum">280</p>
+					<p class="achievementTitle">工作表现</p>
+				</div>
+				<img src="images/personCenter/performance.png" alt="">
+			</div>
+			<!-- 个人发展学习 -->
+			<div class="developStudy">
+				<div class="developValue">
+					<p class="developNum">400h</p>
+					<p class="achievementTitle">个人发展学习</p>
+				</div>
+				<img src="images/personCenter/develop.png" alt="">
+			</div>
+		</div>
+		
+	</div>
+</div>
+<!-- 点击竞岗符合度弹出岗位胜任需求	 -->
+	<div class="competeQualificationDetail">
+		<div class="competeBg"></div>
+		<div class="competeContent">
+			<p class="competeTitle"><b>竞岗符合度</b><br><span style="font-size: 0.23rem;color:#549cee;"><b>(中级工程师)</b></span></p>
+			<div class="competeContentTable">
+				<div class="activeValue">
+					<span>个人等级</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div1">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="prestigeValue">
+					<span>&nbsp;&nbsp;&nbsp;贡献值</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div2">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="manaValue">
+					<span>&nbsp;&nbsp;&nbsp;声望值</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div3">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="prestigeValue">
+					<span>&nbsp;&nbsp;&nbsp;威望值</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div4">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+				<div class="vocationalSkill">
+					<span>职业技能</span>&nbsp;&nbsp;
+					<div class="progress-out" id="div5">
+					    <div class="percent-show"><span>0</span>%</div>
+					    <div class="progress-in"></div>
+					</div>&nbsp;&nbsp;&nbsp;
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- 点击个人贡献出现详情 -->
+	<div class="personAchievementContentList">
+		<div class="personAchievementBg"></div>
+		<div class="personAchievementContent">
+			<p class="competeTitle"><b>个人贡献</b></p>
+			<div class="personAchievementDetailList">
+				<ul class="menu">
+				   <li class="list">
+				   	   <a href="#">
+					   	   	<span>专业考证</span><span>100</span>
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>专业考证1</span><span>50 &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >专业考证专业考证专业考证专业考证专业考证</a>
+				               </li>
+				            </ul>
+				         </li>
+
+				         <li>
+				         	<a href="#">
+				         			<span>专业考证2</span><span>30</span>
+				         	</a>
+				         </li>
+
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>专业考证3</span><span>10 &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >专业考证专业考证专业考证专业考证专业考证</a>
+				               </li>
+				            </ul>
+				         </li>
+				      </ul>
+				   </li>
+				   <li class="list">
+				   		<a href="#">
+				   			<span>特别贡献</span><span>20</span>
+				   		</a> 
+				      <ul class="items">
+				         <li>
+				         	<a href="#">
+				         			<span>特别贡献1</span><span>20</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>特别贡献2</span><span>30</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>特别贡献3</span><span>30</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				   <li class="list">
+				   		<a href="#">
+				   			<span>评优奖励</span><span>120</span>
+				   		</a> 
+				      <ul class="items">
+				         <li>
+				         	<a href="#">
+				         			<span>评优奖励1</span><span>20</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>评优奖励2</span><span>30</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>评优奖励3</span><span>30</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				   <li class="list">
+				   		<a href="#">
+				   			<span>奖惩事故</span><span>50</span>
+				   		</a> 
+				      <ul class="items">
+				         <li>
+				         	<a href="#">
+				         			<span>奖惩事故1</span><span>20</span>
+				         	</a>
+				         </li>
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>奖惩事故2</span><span>50 &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >奖惩事故奖惩事故奖惩事故奖惩事故奖惩事故</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>奖惩事故3</span><span>30</span>
+				         	</a>
+				         </li>
+				         
+				      </ul>
+				   </li>
+					<li class="list">
+				   		<a href="#">
+				   			<span>其他数据</span><span>20</span>
+				   		</a> 
+				      <ul class="items">
+				          <li>
+				         	<a href="#">
+				         			<span>其他数据1</span><span>20</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>其他数据2</span><span>50</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>其他数据3</span><span>30</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 点击工作表现出现详情 -->
+	<div class="taskPerformanceContent">
+		<div class="personAchievementBg"></div>
+		<div class="personAchievementContent">
+			<p class="competeTitle"><b>工作表现</b></p>
+			<div class="personAchievementDetailList">
+				<ul class="menu">
+				   <li class="list">
+				   	   <a href="#">
+					   	   	<span>交付质量</span><span>100</span>
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>专业考证</span><span>50 &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >交付质量交付质量交付质量交付质量交付质量</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>交付质量</span><span>50 &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >交付质量交付质量交付质量交付质量交付质量</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>交付质量</span><span>20</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				   <li class="list">
+				   		<a href="#">
+				   			<span>项目工时</span><span>20</span>
+				   		</a> 
+				      <ul class="items">
+				         <li>
+				         	<a href="#">
+				         			<span>项目工时</span><span>20</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>项目工时</span><span>10</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>项目工时</span><span>30</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				   <li class="list">
+				   		<a href="#">
+				   			<span>交付效率</span><span>80%</span>
+				   		</a> 
+				      <ul class="items">
+				         <li>
+				         	<a href="#">
+				         			<span>交付效率</span><span>20%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>交付效率</span><span>30%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>交付效率</span><span>30%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				   <li class="list">
+				   		<a href="#">
+				   			<span>奖惩事故</span><span>80</span>
+				   		</a> 
+				      <ul class="items">
+				         <li>
+				         	<a href="#">
+				         			<span>奖惩事故1</span><span>20</span>
+				         	</a>
+				         </li>
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>奖惩事故2</span><span>50 &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >奖惩事故奖惩事故奖惩事故奖惩事故奖惩事故</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>奖惩事故3</span><span>30</span>
+				         	</a>
+				         </li>
+				         
+				      </ul>
+				   </li>
+					<li class="list">
+				   		<a href="#">
+				   			<span>其他数据</span><span>20</span>
+				   		</a> 
+				      <ul class="items">
+				          <li>
+				         	<a href="#">
+				         			<span>其他数据1</span><span>20</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>其他数据2</span><span>50</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>其他数据3</span><span>30</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 点击个人发展学习出现详情 -->
+
+	<div class="developStudyContent">
+		<div class="personAchievementBg"></div>
+		<div class="personAchievementContent">
+			<p class="competeTitle"><b>个人发展学习</b></p>
+			<div class="personAchievementDetailList">
+				<ul class="menu">
+				   <li class="list">
+				   	   <a href="#">
+					   	   	<span>管理类</span><span>45%</span>
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>管理类1</span><span>20% &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >管理类1管理类1管理类1管理类1</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类2</span><span>30%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类3</span><span>20%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				   <li class="list">
+				   		<a href="#">
+				   			<span>技术类</span><span>20%</span>
+				   		</a> 
+				      <ul class="items">
+				         <li>
+				         	<a href="#">
+				         			<span>技术类1</span><span>20%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>技术类2</span><span>10%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>技术类3</span><span>30%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				  
+				   <li class="list">
+				   		<a href="#">
+				   			<span>其他类</span><span>20%</span>
+				   		</a> 
+				      <ul class="items">
+				        
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>【办公软件快速掌握-word】</span><span>10% &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >办公软件快速掌握-word办公软件快速掌握-word办公软件快速掌握-word</a>
+				               </li>
+				            </ul>
+				         </li>
+				        
+
+				        <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>【办公软件快速掌握-office】</span><span>10% &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >办公软件快速掌握-office办公软件快速掌握-office办公软件快速掌握-office</a>
+				               </li>
+				            </ul>
+				         </li>
+
+
+				         
+				      </ul>
+				   </li>
+		
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- 点击职业技能出现职业技能详情 -->
+	<div class="vocationalSkillContent">
+		<div class="personAchievementBg"></div>
+		<div class="vocationalSkillDetail">
+			<p class="competeTitle"><b>职业技能</b></p>
+			<div class="vocationalSkillDetailList">
+				
+				<ul class="menu">
+				   <li class="list noBorder">
+				   	   <a href="#">
+					   	   	<span>职业技能</span>
+					   	   	<div class="progress-out" id="skillValue">
+							    <div class="percent-show"><span>0</span>%</div>
+							    <div class="progress-in"></div>
+							</div>
+
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>管理类1</span><span>20% &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类2</span><span>30%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类3</span><span>20%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				  
+				</ul>
+				<!-- 本职任务 -->
+				<img class="dutyTask" src="images/personCenter/dutyTask.png" alt="">
+				<ul class="menu">
+				   <li class="list noBorder">
+				   	   <a href="#">
+					   	   	<span>学习地图1</span>
+					   	   	<div class="progress-out" id="dutyStudyMap1">
+							    <div class="percent-show"><span>0</span>%</div>
+							    <div class="progress-in"></div>
+							</div>
+
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>管理类1</span><span>20% &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1管理类1</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类2</span><span>30%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类3</span><span>20%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+
+				    <li class="list noBorder">
+				   	   <a href="#">
+					   	   	<span>学习地图2</span>
+					   	   	<div class="progress-out" id="dutyStudyMap2">
+							    <div class="percent-show"><span>0</span>%</div>
+							    <div class="progress-in"></div>
+							</div>
+
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>管理类1</span><span>20% &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >管理类1管理类1管理类1管理类1</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类2</span><span>30%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类3</span><span>20%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+
+
+				    <li class="list noBorder">
+				   	   <a href="#">
+					   	   	<span>学习地图3</span>
+					   	   	<div class="progress-out" id="dutyStudyMap3">
+							    <div class="percent-show"><span>0</span>%</div>
+							    <div class="progress-in"></div>
+							</div>
+
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>管理类1</span><span>20% &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >管理类1管理类1管理类1管理类1</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类2</span><span>30%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类3</span><span>20%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				  
+				</ul>
+
+				<!-- 晋升岗位任务 -->
+				<img class="developTask" src="images/personCenter/developTask.png" alt="">
+				<ul class="menu">
+				   <li class="list noBorder">
+				   	   <a href="#">
+					   	   	<span>学习地图1</span>
+					   	   	<div class="progress-out" id="developStudyMap1">
+							    <div class="percent-show"><span>0</span>%</div>
+							    <div class="progress-in"></div>
+							</div>
+
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>网优代为工程师必修课</span><span>
+				         		<!-- 20%  -->
+				         		&nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >剩余学习任务包含【网优RF优化工程师】及【代为业务维护】，完成规定课程可提高职业技能评分。</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类2</span><span>30%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类3</span><span>20%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+
+				    <li class="list noBorder">
+				   	   <a href="#">
+					   	   	<span>学习地图2</span>
+					   	   	<div class="progress-out" id="developStudyMap2">
+							    <div class="percent-show"><span>0</span>%</div>
+							    <div class="progress-in"></div>
+							</div>
+
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>管理类1</span><span>20% &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >管理类1管理类1管理类1管理类1</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类2</span><span>30%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类3</span><span>20%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+
+
+				    <li class="list noBorder">
+				   	   <a href="#">
+					   	   	<span>学习地图3</span>
+					   	   	<div class="progress-out" id="developStudyMap3">
+							    <div class="percent-show"><span>0</span>%</div>
+							    <div class="progress-in"></div>
+							</div>
+
+				   	   </a> 
+				      <ul class="items">
+				         <li class="list">
+
+				         	<a href="#" class="detailItem">
+				         		<span>管理类1</span><span>20% &nbsp;&nbsp;<img src="images/personCenter/info.png" alt="" class="seeIntroduce"></span>
+				         	</a> 
+
+				            <ul  class="items">
+				               <li> 
+				               	<a href="#" class="detailContent" >管理类1管理类1管理类1管理类1</a>
+				               </li>
+				            </ul>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类2</span><span>30%</span>
+				         	</a>
+				         </li>
+				         <li>
+				         	<a href="#">
+				         			<span>管理类3</span><span>20%</span>
+				         	</a>
+				         </li>
+				      </ul>
+				   </li>
+				  
+				</ul>
+
+
+			</div>
+			
+		</div>
+	</div>
+
+</body>
+</html>

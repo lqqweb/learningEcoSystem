@@ -1,0 +1,155 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	height: 100%;
+	padding-top: 0.8rem;
+	/* padding-bottom: 1rem; */
+	background:#f2f6f7;
+	
+}
+/* 学习生态系统 */
+.topInfo{
+	width:6.4rem;
+	height:0.8rem;
+	background-color:#393a3f;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:10;/* 当前显示在最前面 */
+}
+.arrowLeft img{
+	width:0.2rem;
+	height:0.35rem;
+	margin-left:0.25rem;
+}
+.topInfo p{
+	color:white;
+	font-size:0.35rem;
+	margin-left:1.7rem;
+}
+/* 个人信息 */
+.personInfo{
+	width:6.4rem;
+	height:2.9rem;
+	position:relative;
+}
+.bg{
+	width:100%;
+	height:100%;
+	z-index:-1;
+}
+.personInfoList{
+	position:absolute;
+	top: 0.7rem;
+    left: 0.4rem;
+}
+.personImg{
+	width:1.2rem;
+	height:1.2rem;
+	vertical-align:top;
+}
+.personInfoItem{
+	display:inline-block;
+	margin-left: 0.25rem;
+}
+.personInfoItem{
+	_zoom:1;
+	*display:inline;
+}
+.personName,.personType{
+	display:inline-block;
+}
+.personName,.personType{
+	_zoom:1;
+	*display:inline;
+}
+.personName{
+	font-size:0.25rem;
+	margin-right: 0.2rem;
+}
+.personType{
+	color:white;
+	border-radius: 0.5rem;
+    background: #1a84a6;
+    padding: 0.06rem 0.22rem;
+    font-size:0.2rem;
+}
+.personType img{
+	width:0.25rem;
+	height:0.25rem;
+}
+.personNum,.personPosition{
+	color:white;
+	font-size:0.22rem;
+	margin-top:0.1rem;
+}
+.personPositionTitle,.positionList{
+	font-size:0.22rem;
+	color:white;
+}
+.personPositionTitle{
+	display:inline-block;
+	vertical-align:top;
+}
+.personPositionTitle{
+	_zoom:1;
+	*display:inline;
+}
+.positionList{
+	display:inline-block;
+	width:3.6rem;
+}
+.positionList{
+	_zoom:1;
+	*display:inline;
+}
+/* 学习情况展示 */
+.studyInfo{
+	margin-top:0.3rem;
+}
+.studyInfoItem{
+	display:inline-block;
+	border-bottom:0.02rem solid #ededed;
+	/* width: 6.4rem; */
+    background: #ffff;
+}
+.studyInfoItem:nth-child(2n+1){
+	border-right:0.02rem solid #ededed;
+}
+.studyInfoItem:nth-child(2n+2){
+	margin-left:-0.05rem;
+}
+
+/* .studyInfoList:nth-child(2n+1){
+	border-right:0.005rem solid #cecaca;
+}
+.studyInfoList:nth-child(2n+2){
+	margin-left:-0.05rem;
+} */
+
+.studyInfoList{
+    width: 3.18rem;
+    height: 1.2rem;
+    display: inline-block;
+    background: #ffff;
+    text-align: center;
+    line-height: 1.2rem;
+}
+.studyInfoList img{
+	width:0.7rem;
+	height:0.7rem;
+	vertical-align:middle;
+}
+.studyCenter{
+	display:inline-block;
+	font-size:0.25rem;
+	margin-left: 0.28rem;
+	color:#637895;
+}

@@ -1,0 +1,260 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	 width: 6.4rem; 
+	/* height: 100%; */
+	padding-top: 0.8rem;
+	/* padding-bottom: 1rem; */
+	/* background:#f2f6f7; */
+	
+}
+/* 发展路径 */
+.topInfo{
+	width:6.4rem;
+	height:0.8rem;
+	background-color:#393a3f;
+	display:flex;
+	justify-content:flex-start;
+	align-items:center;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:10;/* 当前显示在最前面 */
+}
+.arrowLeft img{
+	width:0.2rem;
+	height:0.35rem;
+	margin-left:0.25rem;
+}
+.topInfo p{
+	color:white;
+	font-size:0.35rem;
+	margin-left:2rem;
+}
+.introduceTitle{
+	color:red;
+	text-align:center;
+	font-size: 0.23rem;
+    letter-spacing: 0.02rem;
+    margin:0.2rem 0.45rem;
+}
+/* 发展路径展示 */
+.developPathList{
+	margin:0 0.3rem;
+}
+/* 技术性发展 */
+.technicalLine{
+	display:inline-block;
+	width:2.8rem;
+	/* border:0.01rem dotted #9dcbff; */
+	text-align:center;
+}
+.technicalLineTitle{
+	font-size:0.28rem;
+	color:#637895;
+	padding:0.15rem 0 0.2rem 0;
+}
+.technicalLineDevelop{
+	font-size:0.2rem;
+	margin: 0 auto;
+    width: 2.5rem;
+    /* border:0.01rem solid red; */
+}
+
+/* 现在岗位 */
+.nowPost{
+	padding: 0.1rem 0;
+    border: 0.01rem solid #a4ceff;
+    background:#549cee;
+    color:white;
+}
+.userImg,.nowPostPosition{
+	display:inline-block;
+}
+.userImg{
+	width:0.7rem;
+	border:0.01rem solid #fff;
+}
+.nowPostPosition{
+	width:1.5rem;
+	/* border:0.01rem solid blue; */
+	vertical-align:middle;
+	font-size: 0.24rem;
+}
+.userImg img{
+	width: 0.7rem;
+    height: 0.7rem;
+    vertical-align:middle;
+}
+/* 可选择岗位 */
+.arrowDown{
+	margin:0.1rem 0;
+}
+.postName{
+	border: 0.01rem solid #a4ceff;
+    padding: 0.3rem 0;
+    color:#549cee;
+    font-size: 0.24rem;
+    position:relative;
+}
+.firstSelect{
+	position:absolute;
+	top:0;
+	right:0;
+}
+
+/* 转岗可选职位 */
+.transformPost{
+	display:inline-block;
+	width:2.8rem;
+	border:0.01rem dotted #6fbc69;
+	text-align:center;
+	vertical-align:top;
+	padding-bottom: 1rem;
+}
+.transformTitle{
+	font-size:0.28rem;
+	color:#637895;
+	padding:0.15rem 0 0.2rem 0;
+}
+/* 可选择岗位 */
+.transformPostDevelop{
+	font-size:0.2rem;
+	margin: 0 auto;
+    width: 2.4rem;
+    /* border:0.01rem solid red; */
+}
+.transformName{
+	border: 0.01rem solid #a9d7a5;
+    padding: 0.3rem 0;
+    color:#6fbc69;
+    margin-bottom:0.28rem;
+    font-size: 0.22rem;
+    position:relative;
+}
+.transSelect{
+	position:absolute;
+	top:0;
+	right:0;
+}
+.linePost{
+	font-size:0.24rem;
+}
+
+.lineName{
+	color:black;
+	font-size:0.23rem;
+}
+.selectCondition{
+	font-size:0.2rem;
+}
+/* 点击岗位查看对应岗位需求 */
+.postCondition{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	width:6.4rem;
+	z-index:10000;
+}
+.postConditionBg{
+	position:fixed;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0;
+	background:#999999;
+	z-index:-10;
+	opacity:0.5;
+}
+.postConditionContent{
+	background:#fff;
+	color:black;
+	width:4.8rem;
+	margin:3rem auto 0 auto;
+	border-radius:0.1rem;
+}
+.postConditionTitle{
+	font-size:0.28rem;
+	text-align:center;
+	letter-spacing:0.1rem;
+	 padding:0.25rem 0 0.1rem 0;
+}
+.postConditionTable{
+	padding-bottom:0.3rem;
+	font-size:0.23rem;
+}
+/* .postConditionTable table tr td{
+	width:1.58rem;
+	font-size:0.23rem;
+	height:0.6rem;
+}
+.t1{
+	border-top:0.01rem solid #c5d1de;
+	border-right:0.01rem solid #c5d1de;
+	border-bottom:0.01rem solid #c5d1de;
+}
+.t2{
+	border:0.01rem solid #c5d1de;
+}
+.t3{
+	border-top:0.01rem solid #c5d1de;
+	border-bottom:0.01rem solid #c5d1de;
+	border-left:0.01rem solid #c5d1de;
+} */
+
+.activeValue{
+	padding-top: 0.3rem;
+}
+.activeValue,.prestigeValue,
+.manaValue,.prestigeValue,.vocationalSkill{
+	padding-left:0.35rem;
+	margin-bottom:0.25rem;
+	/* display:none; */
+}
+
+.progress-out{
+	display:inline-block;
+}
+.percent-show{
+	font-size:0.2rem !important;
+}
+
+
+.fontColor{
+	color:#637895;
+}
+.setObject{
+	/* border: 0.01rem solid red; */
+    margin: 0.2rem 1.5rem 0 1.5rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    font-size: 0.23rem;
+    background: #5bc481;
+    color: white;
+    padding: 0.08rem 0;
+    border-radius: 0.05rem;
+    display:block;
+}
+.cancleObject{
+	 margin: 0.2rem 1.5rem 0 1.5rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    font-size: 0.23rem;
+    background: red;
+    color: white;
+    padding: 0.08rem 0;
+    border-radius: 0.05rem;
+    display:none;
+}
+.addColor{
+	background:#549cee;
+	color:white;
+	border:none;
+}
+
+
